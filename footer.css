@@ -1,0 +1,115 @@
+/* === Footer === */
+.footer {
+    background: linear-gradient(90deg, #8c5e3c, #4d3622); /* Vert arbre naturel */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    color: white;
+    padding: 10px 20px; /* Réduction de padding pour limiter la hauteur */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid #4d3622; /* Ligne marron pour démarcation */
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1170px;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap; /* Gère les petits écrans */
+}
+
+.footer-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+    padding: 5px;
+}
+
+.footer-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 5px;
+}
+
+.footer-item p, .footer-item ul {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: white;
+}
+
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-item ul li {
+    margin: 5px 0;
+}
+
+.footer-item ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Conteneur des liens sociaux */
+.social-links {
+    display: flex; /* Alignement horizontal */
+    gap: 15px; /* Espacement entre les icônes */
+    justify-content: center; /* Centrer les icônes */
+    align-items: center; /* Alignement vertical */
+    margin-top: 20px; /* Espace au-dessus */
+    padding: 10px 0; /* Espacement interne */
+}
+
+/* Style général des icônes sociales */
+.social-links a {
+    display: inline-flex; /* Flexbox pour alignement précis */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    width: 50px; /* Taille du bouton */
+    height: 50px;
+    background: linear-gradient(145deg, #b37f53, #7a5034); /* Dégradé beige-marron doré */
+    border-radius: 50%; /* Forme ronde */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.8); /* Effet néomorphisme */
+    transition: all 0.3s ease; /* Animation fluide */
+    text-decoration: none;
+}
+
+/* Animation au survol */
+.social-links a:hover {
+    background: linear-gradient(145deg, #8c5e3c, #4d3622); /* Dégradé du footer au survol */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(0, 0, 0, 0.1); /* Ombre plus marquée */
+    transform: translateY(-4px); /* Soulèvement au survol */
+}
+
+/* Style des icônes */
+.social-links a i {
+    font-size: 24px; /* Taille de l'icône */
+    color: #fff; /* Couleur par défaut */
+    transition: color 0.3s ease; /* Transition fluide */
+}
+
+/* Couleur des icônes au survol */
+.social-links a:hover i {
+    color: #fff; /* Blanc au survol */
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer-item {
+        text-align: center;
+    }
+}

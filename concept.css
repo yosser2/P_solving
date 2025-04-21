@@ -1,0 +1,228 @@
+/* === Global Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* === Container === */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === Logo === */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 80px; /* Augmentez cette valeur pour agrandir le logo */
+    height: auto; /* Maintient les proportions du logo */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1; /* Assurez-vous que cela n'étire pas la navbar */
+    margin-top: 8px;
+}
+
+/* === Section Title === */
+.section-title {
+    font-size: 2rem;
+    color: #2d3b40;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid #8c5e3c;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* === Section Concept === */
+.concept-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.concept-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.concept-item {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.concept-item:hover {
+    transform: translateY(-10px);
+}
+
+.concept-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.concept-info {
+    text-align: center;
+}
+
+.concept-info h3 {
+    font-size: 1.5rem;
+    color: #2d3b40;
+}
+
+.concept-info p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* === Section Nos Valeurs === */
+.values-section {
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.values-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.value-item {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 22%;
+}
+
+.value-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #8c5e3c;
+}
+
+.value-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* === Section Équipe === */
+.team-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* === Section Témoignages === */
+.testimonials {
+    background-color: #e9e9e9;
+    padding: 60px 0;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-item strong {
+    font-weight: bold;
+    color: #2d3b40;
+}
+
+/* === Section FAQ === */
+.faq-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+}
