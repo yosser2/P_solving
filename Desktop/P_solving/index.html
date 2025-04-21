@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Ossatures Bois</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="./images/logo3.png" alt="Logo" class="logo" >
+                <span class="logo-text">InnoWood</span>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Menu Navigation -->
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="./pages/services.html" class="nav-link">Services</a>
+                <a href="./pages/projets.html" class="nav-link">Projets</a>
+                <a href="./pages/contact.html" class="nav-link">Contact</a>
+                <a href="./pages/concept.html" class="nav-link">Concept</a>
+            </div>
+
+            <!-- Auth Links -->
+            <div class="auth-links">
+                <a href="./pages/inscription.html" id="signupButton" class="auth-link">S'inscrire</a>
+                <a href="./pages/connexion.html" id="authButton" class="auth-link" onclick="toggleAuth()">Connexion</a>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrousel d'images -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <img src="images/image1.jpg" class="carousel-image" alt="Maison en bois 1">
+            <img src="images/image2.jpg" class="carousel-image" alt="Maison en bois 2">
+            <img src="images/image3.jpg" class="carousel-image" alt="Maison en bois 3">
+        </div>
+    </section>
+
+    <!-- Présentation -->
+    <main class="main-content">
+    <!-- Section de présentation -->
+    <section class="presentation">
+        <h2 class="section-title">Bienvenue chez Ossatures Bois</h2>
+        <p class="section-text">
+            Découvrez nos services de construction en ossature bois, nos projets réalisés et contactez-nous pour plus d'informations.
+        </p>
+    </section>
+
+    <!-- Section "Qui sommes-nous ?" -->
+    <section id="qui-sommes-nous">
+        <div class="content">
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                Nous sommes une entreprise spécialisée dans la conception et la construction de maisons en bois.
+                Notre mission est d'offrir des solutions écologiques, esthétiques et durables pour tous vos projets.
+            </p>
+        </div>
+    </section>
+
+
+
+
+<!-- Carrousel des services -->
+<section id="nos-services">
+    <h2>Nos services</h2>
+    <div class="services-container">
+        <div class="slick-carousel">
+            <div class="service-item" style="background-image: url('./images/service1.jpg');">
+                <div class="service-content">
+                    <h3>Maisons en bois préfabriquées</h3>
+                    <p>Maisons écologiques et modernes, prêtes à vivre.</p>
+                </div>
+            </div>
+            <div class="service-item" style="background-image: url('./images/service2.jpg');">
+                <div class="service-content">
+                    <h3>Construction sur mesure</h3>
+                    <p>Des projets personnalisés, selon vos besoins.</p>
+                </div>
+            </div>
+            <div class="service-item" style="background-image: url('./images/service3.jpg');">
+                <div class="service-content">
+                    <h3>Transport de maisons en bois</h3>
+                    <p>Livraison rapide et sécurisée de vos maisons en bois.</p>
+                </div>
+            </div>
+            <div class="service-item" style="background-image: url('./images/service4.jpg');">
+                <div class="service-content">
+                    <h3>Conception et construction complète</h3>
+                    <p>Une solution clé en main, de la conception architecturale à la construction de votre maison en bois.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boutons de navigation -->
+    <div class="carousel-nav">
+        <button id="prev-btn" class="carousel-btn">←</button>
+        <button id="next-btn" class="carousel-btn">→</button>
+    </div>
+
+    <!-- Lien pour découvrir plus de services -->
+    <div class="btn">
+        <a href="pages/services.html">Découvrir nos services</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+        <!-- Section Nos projets -->
+        <section id="nos-projets">
+            <h2>Nos projets</h2>
+            <div class="projets-gallery">
+                <div class="projet-item">
+                    <img src="./images/projet1.jpg" alt="Projet 1">
+                </div>
+                <div class="projet-item">
+                    <img src="./images/projet2.jpg" alt="Projet 2">
+                </div>
+                <div class="projet-item">
+                    <img src="./images/projet3.jpg" alt="Projet 3">
+                </div>
+                <div class="projet-item">
+                    <img src="./images/projet4.jpg" alt="Projet 4">
+                </div>
+                <div class="projet-item">
+                    <img src="./images/projet5.jpg" alt="Projet 5">
+                </div>
+                <div class="projet-item">
+                    <img src="./images/projet6.jpg" alt="Projet 6">
+                </div>
+            </div>
+
+            <div class="btn">
+            <a href="pages/projets.html"  >Découvrir nos projets</a>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- À propos -->
+            <div class="footer-item">
+                <h4>À propos</h4>
+                <p>
+                    InnoWood est spécialisé dans la conception et la construction de maisons en ossature bois,
+                    alliant durabilité et esthétique.
+                </p>
+            </div>
+    
+            <!-- Contact -->
+            <div class="footer-item">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="./pages/contact.html">Formulaire</a></li>
+                    <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                    <li><a href="mailto:contact@innowood.fr">contact@innowood.fr</a></li>
+                </ul>
+            </div>
+    
+<!-- Réseaux sociaux -->
+<div class="footer-item">
+    <h4>Réseaux sociaux</h4>
+    <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook" alt="Facebook"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter" alt="Twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram" alt="Instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin" alt="LinkedIn"></i>
+        </a>
+    </div>
+</div>
+
+        </div>
+    </footer>
+    
+    
+    
+    
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://kit.fontawesome.com/618f10f444.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- Lien vers les fichiers CSS et JS de Slick Carousel -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+</html>
+
+
