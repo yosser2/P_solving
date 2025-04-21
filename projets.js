@@ -20,6 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Afficher les projets au chargement de la page
+    // Afficher tous les projets au cours de chargement de la page
     displayProjects();
 })
