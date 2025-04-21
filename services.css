@@ -1,0 +1,202 @@
+   /* === Section des services === */
+   .service-section {
+    background-color: #f9f9f9;
+    padding: 70px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #2d3b40;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid #8c5e3c;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.service-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 50px;
+    line-height: 1.8;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 80px; /* Augmentez cette valeur pour agrandir le logo */
+    height: auto; /* Maintient les proportions du logo */
+
+}
+
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1; /* Assurez-vous que cela n'étire pas la navbar */
+    margin-top: 8px;
+}
+
+/* === Détail des services === */
+.service-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* === Style des items de service === */
+.service-item1, .service-item2, .service-item3, .service-item4 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 48%; /* Deux services par ligne */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item1:hover, .service-item2:hover, .service-item3:hover, .service-item4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* === Conteneur de l'image === */
+.service-img-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* === Description du service === */
+.service-description {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-description h3 {
+    font-size: 1.5rem;
+    color: #2e3a47;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.service-description p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* === Responsiveness === */
+@media (max-width: 1200px) {
+    .service-item1, .service-item2, .service-item3, .service-item4 {
+        width: 48%;
+    }
+}
+
+@media (max-width: 900px) {
+    .service-item1, .service-item2, .service-item3, .service-item4 {
+        width: 100%; /* Un seul service par ligne sur les petits écrans */
+    }
+}
+
+
+/* === Section Pourquoi Nous Choisir === */
+.why-choose-us {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.why-choose-us .features {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.why-choose-us .feature-item {
+    text-align: center;
+    width: 300px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.why-choose-us .feature-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.why-choose-us h3 {
+    font-size: 1.5rem;
+    color: #8c5e3c;
+    margin-bottom: 10px;
+}
+
+/* === Section Témoignages === */
+.testimonials {
+    padding: 50px 20px;
+    background: #f3f2f0;
+    color: black;
+    margin: 30px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonials .testimonial-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonials .testimonial-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.testimonials p {
+    font-style: italic;
+}
+
+.testimonials h4 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #8c5e3c;
+}
