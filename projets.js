@@ -21,5 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Afficher tous les projets au cours de chargement de la page
-    displayProjects();
+    // displayProjects();
 })
